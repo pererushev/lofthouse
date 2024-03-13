@@ -133,6 +133,10 @@ a:hover {
   padding: 0 15px;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -161,6 +165,11 @@ a:hover {
 }
 .header__title .container a {
   padding-top: 81px;
+}
+.header__bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }
 
 .nav {
