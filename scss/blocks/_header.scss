@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 74px;
+  min-height: 840px;
+
+  background: linear-gradient(
+      180deg,
+      rgba(36, 43, 51, 1),
+      rgba(45, 52, 60, 0.38),
+      rgba(36, 43, 51, 1)
+    ),
+    url("./../img/header/header-bg.jpg") center center;
+
+  &__top-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    text-align: center;
+    font-family: $font-accent;
+    font-size: 48px;
+    font-weight: bold;
+    color: $accent;
+    .container {
+      display: flex;
+      flex-direction: column;
+      a {
+        padding-top: 81px;
+      }
+    }
+  }
+}
