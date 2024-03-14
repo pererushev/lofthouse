@@ -17,10 +17,45 @@ a {
 
 .container {
   margin: 0 auto;
-  width: 1140px;
+  max-width: 1140px;
   padding: 0 15px;
+  &--sm {
+    max-width: 824px;
+  }
 }
 
 .text-right {
   text-align: right;
+}
+
+.visually-hidden {
+  /* Contain text within 1px box */
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+
+  /* Keep the layout */
+  position: absolute;
+
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  /* Prevent the screen reader to skip spaces between words */
+  white-space: nowrap;
+
+  /* Remove any visible trace (e.g. background color) */
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+}
+
+.none {
+  display: none !important;
+}
+
+.title-2 {
+  font-family: $font-accent;
+  font-weight: bold;
+  font-size: 36px;
+  color: $accent;
 }

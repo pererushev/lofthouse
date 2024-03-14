@@ -129,12 +129,44 @@ a:hover {
 
 .container {
   margin: 0 auto;
-  width: 1140px;
+  max-width: 1140px;
   padding: 0 15px;
+}
+.container--sm {
+  max-width: 824px;
 }
 
 .text-right {
   text-align: right;
+}
+
+.visually-hidden {
+  /* Contain text within 1px box */
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  /* Keep the layout */
+  position: absolute;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  /* Prevent the screen reader to skip spaces between words */
+  white-space: nowrap;
+  /* Remove any visible trace (e.g. background color) */
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+}
+
+.none {
+  display: none !important;
+}
+
+.title-2 {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 36px;
+  color: #d4c17f;
 }
 
 .header {
@@ -203,4 +235,41 @@ a:hover {
 }
 .info--tel::before {
   background-image: url("./../../img/header/phone-call.svg");
+}
+
+.benefits {
+  padding: 120px 0;
+}
+.benefits__row {
+  display: flex;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
+}
+.benefits__item {
+  text-align: center;
+}
+.benefits__item-img {
+  margin-bottom: 53px;
+}
+.benefits__item-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.35;
+}
+
+.apartments__title {
+  margin-bottom: 88px;
+}
+
+.card {
+  display: block;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=main.css.map */
