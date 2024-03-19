@@ -41,4 +41,19 @@
     grid-template-columns: 1fr 1fr;
     gap: 30px;
   }
+
+  &__nav {
+    
+    @media screen and (max-width: 999px) {
+      display: none;
+    }
+    &-btn {
+        display: none;
+        @media screen and (max-width: 999px) {
+        display: block;
+      }
+    }
+  }
+
+  
 }
