@@ -1,4 +1,5 @@
 .video {
+  position: relative;
   text-align: center;
   &__link {
     position: relative;
@@ -29,5 +30,15 @@
   &__link:hover &__icon {
     transform: translate(-50%, -50%) scale(1.2);
     filter: saturate(1.5);
+  }
+  &::after {
+    content: "IV";
+
+    top: 0;
+    left: calc(50% + 555px);
+    transform: translate(-50%, 0%);
+    line-height: 1.15;
+    padding: 71px 0;
+    @include decorNumber;
   }
 }

@@ -1,5 +1,7 @@
 .benefits {
+  position: relative;
   padding: 120px 0;
+
   &__row {
     display: flex;
     column-gap: 70px;
@@ -15,5 +17,14 @@
       font-weight: 300;
       line-height: 1.35;
     }
+  }
+  &::after {
+    content: "II";
+
+    top: 0;
+    left: calc(50% + 555px);
+    transform: translate(-50%, 0%);
+    line-height: 1.15;
+    @include decorNumber;
   }
 }

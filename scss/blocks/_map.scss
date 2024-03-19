@@ -1,12 +1,22 @@
 .map {
-    padding: 180px 0;
-    
-    &__title {
-        margin-bottom: 88px;
-    }
-    &__content {
-        height: 358px;
-        background-color: #626262;
-    }
-    
+  position: relative;
+  padding: 180px 0;
+
+  &__title {
+    margin-bottom: 88px;
+  }
+  &__content {
+    height: 358px;
+    background-color: #626262;
+  }
+  &::before {
+    content: "V";
+
+    z-index: -1;
+    top: 180px;
+    right: calc(50% + 555px);
+    transform: translate(50%, 0%);
+    line-height: 1;
+    @include decorNumber;
+  }
 }

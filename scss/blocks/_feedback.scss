@@ -1,0 +1,15 @@
+.feedback {
+  padding-bottom: 180px;
+  &__header {
+    margin-bottom: 38px;
+  }
+  &__privacy {
+    display: flex;
+    align-items: center;
+  }
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+}
