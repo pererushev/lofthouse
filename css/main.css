@@ -168,6 +168,11 @@ a:hover {
   font-size: 36px;
   color: #d4c17f;
 }
+@media screen and (max-width: 959px) {
+  .title-2 {
+    font-size: 28px;
+  }
+}
 
 .privacy {
   color: #e7e7e7;
@@ -189,7 +194,7 @@ a:hover {
   min-height: 840px;
   background: linear-gradient(180deg, rgb(36, 43, 51), rgba(45, 52, 60, 0.38), rgb(36, 43, 51)), url("./../img/header/header-bg.jpg") center center;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header {
     min-height: unset;
     row-gap: 50px;
@@ -244,7 +249,7 @@ a:hover {
 .header__title .container a {
   padding-top: 81px;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header__title {
     font-size: 32px;
     padding-bottom: 100px;
@@ -255,7 +260,7 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header__bottom {
     display: flex;
     flex-direction: column;
@@ -263,7 +268,7 @@ a:hover {
     row-gap: 15px;
   }
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header__nav {
     display: none;
   }
@@ -271,7 +276,7 @@ a:hover {
 .header__nav-btn {
   display: none;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header__nav-btn {
     display: block;
   }
@@ -372,7 +377,7 @@ a:hover {
 .info--tel::before {
   background-image: url("./../../img/header/phone-call.svg");
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .info {
     font-size: 14px;
   }
@@ -391,7 +396,7 @@ a:hover {
   -moz-column-gap: 70px;
        column-gap: 70px;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .benefits__row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
@@ -404,7 +409,7 @@ a:hover {
 .benefits__item-img {
   margin-bottom: 53px;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .benefits__item-img {
     width: 60px;
     height: 60px;
@@ -417,7 +422,7 @@ a:hover {
   font-weight: 300;
   line-height: 1.35;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .benefits__item-text {
     font-size: 16px;
   }
@@ -441,10 +446,20 @@ a:hover {
 .apartments__title {
   margin-bottom: 88px;
 }
+@media screen and (max-width: 959px) {
+  .apartments__title {
+    margin-bottom: 44px;
+  }
+}
 .apartments__cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+}
+@media screen and (max-width: 959px) {
+  .apartments__cards {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
 }
 .apartments::before {
   content: "III";

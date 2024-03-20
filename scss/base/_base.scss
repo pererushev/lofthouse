@@ -58,6 +58,10 @@ a {
   font-weight: bold;
   font-size: 36px;
   color: $accent;
+
+  @include mediaTablet {
+    font-size: 28px;
+  }
 }
 
 .privacy {
