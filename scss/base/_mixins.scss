@@ -5,3 +5,8 @@
   font-family: $font-accent;
   font-weight: bold;
 }
+@mixin mediaTablet {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}
