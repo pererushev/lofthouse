@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LoftHouse</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="/libs/youtubeLightbox/youtubeLightbox.css" />
   </head>
   <body>
-    <header class="header none">
+    <header class="header none1">
       <div class="header__top">
         <div class="container">
           <div class="header__top-row">
@@ -57,7 +58,7 @@
       </div>
     </header>
     <main>
-      <section class="benefits none">
+      <section class="benefits none1">
         <h2 class="visually-hidden">Преимущества ЖК</h2>
 
         <div class="container container--sm">
@@ -140,7 +141,7 @@
           </div>
         </div>
       </section>
-      <section class="cta none">
+      <section class="cta none1">
         <div class="container">
           <div class="cta__title">
             <h2 class="title-2">Хотите посмотреть?</h2>
@@ -164,6 +165,7 @@
                 placeholder="Ваше имя"
               />
               <input
+                data-tel-input
                 type="text"
                 name=""
                 id=""
@@ -179,26 +181,34 @@
           </div>
         </div>
       </section>
-      <section class="video none">
+      <section class="video none1">
         <div class="container">
           <h2 class="visually-hidden">Видео про ЖК Лофт-Хаус</h2>
-          <a href="#!" class="video__link">
+          <a
+            href="https://www.youtube.com/watch?v=bhJNL9JUsnY"
+            class="video__link"
+            data-youtubeLightbox
+          >
             <img src="/img/video/vplay.svg" alt="" class="video__icon" />
             <img src="/img/video/video.jpg" alt="" class="video__img" />
           </a>
         </div>
       </section>
-      <section class="map none">
+      <section class="map none1">
         <div class="container">
           <div class="map__title">
             <h2 class="title-2">Район на карте</h2>
           </div>
           <div class="map__content">
-            <div class="map__map" id="map"></div>
+            <div
+              class="map__map"
+              id="map"
+              style="max-width: 1110px; height: 358px"
+            ></div>
           </div>
         </div>
       </section>
-      <section class="feedback none">
+      <section class="feedback none1">
         <div class="container">
           <div class="feedback__header">
             <h2 class="title-2">Есть вопросы?</h2>
@@ -218,6 +228,7 @@
               placeholder="Ваше имя"
             />
             <input
+              data-tel-input
               type="text"
               name=""
               id=""
@@ -229,7 +240,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer none">
+    <footer class="footer none1">
       <div class="container">
         <div class="footer__grid">
           <div class="footer__logo">
@@ -286,6 +297,21 @@
         </div>
       </div>
     </footer>
+    <!-- YouTube LightBox -->
+    <div id="youtubelightbox" class="youtubelightbox">
+      <div class="youtubelightbox__centeredchild">
+        <div class="youtubelightbox__videowrapper">
+          <div id="youtubelightboxPlayer"></div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=8b68bb76-b911-4397-96ea-a42d9925348f&lang=ru_RU"
+      type="text/javascript"
+    ></script>
+    <script src="/libs/phoneMask/mask.js"></script>
+    <script src="/libs/phoneMask/mask_list.js"></script>
+    <script src="/libs/youtubeLightbox/youtubeLightbox.js"></script>
     <script src="/js/main.js"></script>
   </body>
 </html>

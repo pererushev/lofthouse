@@ -28,4 +28,9 @@
       background-color: saturate($accent, 20%);
     }
   }
+  &__privacy {
+    @include mediaTablet {
+      grid-row: 4/5;
+    }
+  }
 }

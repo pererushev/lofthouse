@@ -1,6 +1,7 @@
 .video {
   position: relative;
   text-align: center;
+  overflow: hidden;
   &__link {
     position: relative;
     display: inline-block;
@@ -26,6 +27,10 @@
     top: 50%;
     transform: translate(-50%, -50%);
     transition: transform 0.2s ease-in;
+    @include mediaTablet {
+      width: 80px;
+      height: 80px;
+    }
   }
   &__link:hover &__icon {
     transform: translate(-50%, -50%) scale(1.2);

@@ -4,6 +4,9 @@
 
   &__title {
     margin-bottom: 88px;
+    @include mediaTablet {
+      margin-bottom: 40px;
+    }
   }
   &__content {
     height: 358px;
@@ -18,5 +21,8 @@
     transform: translate(50%, 0%);
     line-height: 1;
     @include decorNumber;
+  }
+  @include mediaTablet {
+    padding: 60px 0;
   }
 }
